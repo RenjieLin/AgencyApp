@@ -56,6 +56,7 @@ namespace AgencyApp
                 //-  T E M P O R A R Y
                 await Client.Refresh();
                 thisPage.Title = "Contractor";
+		thisPage.Children.Add(new Feedback { Title = "Feedback" });
                 thisPage.Children.Add(new ProfilePage { Title = "Profile" });
             }
         }
